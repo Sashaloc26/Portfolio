@@ -1,0 +1,1 @@
+[{"model": "recipes.categoriesmodel", "pk": 1, "fields": {"name": "Горячее", "description": null}}, {"model": "recipes.categoriesmodel", "pk": 2, "fields": {"name": "Холодное", "description": null}}]

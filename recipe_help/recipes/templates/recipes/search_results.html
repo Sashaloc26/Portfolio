@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+
+</head>
+
+<body>
+<h1>Результаты:</h1>
+<ul>
+    {% for rep in recipes_search %}
+    <li>Название:{{ rep.name }}</li>
+    <li>Описание:{{ rep.description }}</li>
+    <li>Продукты:{{ rep.products }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

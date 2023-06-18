@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт рецептов</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>Сайт для поиска рецептов</h1>
+    <form action="{% url 'search' %}" method="get">
+        <input type="search"  name="q" placeholder="Напишите свои продукты">
+        <button type="submit">Найти</button>
+    </form>
+<hr>
+ <div class="additional-block">
+  <h3>Сгенерируй случайный рецепт</h3>
+  <div class="button-wrapper">
+    <form action="{% url 'random_recipe' %}" method="get">
+      <button class="small-button">Сгенерировать</button>
+    </form>
+  </div>
+</div>
+
+
+</header>
+
+<div class="toc">
+    <h2>Категории:</h2>
+    {% for cat in category %}
+    <a href="{% url 'category_recipes' category_id=cat.id %}" class="toc-link"><h3>{{ cat.name }}</h3></a>
+    {% endfor %}
+</div>
+
+<main>
+
+</main>
+
+</body>
+</html>

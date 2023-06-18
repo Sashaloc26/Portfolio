@@ -1,0 +1,31 @@
+{% load static cache %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Список объектов</title>
+  <link rel="stylesheet" href="{% static 'category.css' %}">
+
+</head>
+<body>
+  <h1>Список объектов</h1>
+
+  <ul>
+    {% cache 10 recipes %}
+
+    {% for rep in recipes %}
+    <li>Название:{{ rep.name }}</li>
+    <li>Описание:{{ rep.description }}</li>
+    <li>Продукты:{{ rep.products }}</li>
+    {% if rep.link_video %}
+    <li id="class"><a href="{{ rep.link_video }}">Видео-приготовление</a></li>
+    {% endif %}
+    {% if rep.avatar %}
+    <img src="{{ rep.avatar.url }}">
+    {% endif %}
+    {% endfor %}
+  {% endcache %}
+  </ul>
+
+</body>
+</html>

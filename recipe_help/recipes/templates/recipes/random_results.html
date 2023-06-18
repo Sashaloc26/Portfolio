@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Случайный рецепт</title>
+    <link rel="stylesheet" href="{% static 'category.css' %}">
+
+</head>
+<body>
+    <h2>Результат случайного рецепта</h2>
+
+    <ul>
+    <li>Название:{{ random.name }}</li>
+    <li>Описание:{{ random.description }}</li>
+    <li>Продукты:{{ random.products }}</li>
+    {% if random.link_video %}
+    <li id="class"><a href="{{ random.link_video }}">Видео-приготовление</a></li>
+    {% endif %}
+    {% if random.avatar %}
+    <img src="{{ random.avatar.url }}">
+    {% endif %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(food.jpg);
+    background-size: 1800px 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.additional-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.button-wrapper {
+  margin-top: 10px;
+}
+
+.toc {
+    float: left;
+    margin-right: 20px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    margin-left: 2cm;
+    width: 30%;
+    height: 60%;
+    border-radius: 8px;
+}
+
+.toc h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.toc h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.toc-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.toc-link:hover {
+    text-decoration: underline;
+}
+
+.small-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: black;
+  color: white;
+}
