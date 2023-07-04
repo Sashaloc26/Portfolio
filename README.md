@@ -1,7 +1,7 @@
 
 This is my portfolio showing my study projects. 
 
-The first of these is a recipe site that stores recipes with their descriptions, photographs and links to video preparation. 
+The first of these is a recipe site which contains recipes with their descriptions, photographs and links to video preparation. 
 With a search bar to search for recipes by name or product, and a function that returns one random recipe if you don't know what to cook. Written in Python, Django, PostqreSQL and some Redis for caching
 
 The second project is an online store of things with a catalog, registration, updating a user profile, an order basket, with a tab for tracking the status of an order and an email campaign for confirming registration, 
