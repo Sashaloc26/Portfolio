@@ -1,11 +1,33 @@
+1)store
+An online clothing store  where the user can register and log in using GitHub, make an order and track the status of the order.
+- Authorization via django-allauth
+- Email to confirm registration using EmailBackend
+- Redis page caching
+- Optimization of registration speed using Celery workers
+- Updated users profiles, order basket, tracking order status, restrictions for unauthorized users.
+- FrontEnd(HTML,CSS,Bootstrap)
+- Unit Testing
+- Code checked with PEP 8 standards using flake8 linter
 
-This is my portfolio showing my study projects. 
+Stack:Django,PostgreSQL,Redis,Celery,Unit-Tests,HTML,CSS,Bootstrap,flake8
 
-The first of these is a recipe site which contains recipes with their descriptions, photographs and links to video preparation. 
-With a search bar to search for recipes by name or product, and a function that returns one random recipe if you don't know what to cook. Written in Python, Django, PostqreSQL and some Redis for caching
 
-The second project is an online store of things with a catalog, registration, updating a user profile, an order basket, with a tab for tracking the status of an order and an email campaign for confirming registration, 
-pagination and a small number of functional tests, they are there more to get acquainted with the django test case than for testing,Written in Python, Django, PostqreSQL and some Redis and Celery for caching and oauth 2 for logging with github
+2)drfproj
+An online library where authorized users can: like and rate books, mark the book that has been read.
+- Authorization using Python Social Auth
+- Implemented API on Django Rest Framework
+- Solved the n+1 problem and optimized database queries
+- CRUD service with filters, sorting search
+- Test coverage more than 90% Unit-Testing
+- Relationships between users and books in the form of: likes, ratings and marks.
+- Code checked for PEP 8 standards using flake8 linter
 
-The third project is the Internet Library API implemented on DRF, with the storage of books and the information corresponding to them, there is also a relationship of user interaction with books in the form of rating likes and whether he has read the book and covering most of the project with tests in the form of APITestCase, 
-there is also authorization through github for checking permissions work via postman
+Stack:Django,Django Rest Framework,PostgreSQL,Unit Testing, flake8
+
+3)recipe_help
+Website with recipes and functionality for searching for recipes based on your available products or receiving a random recipe when interacting with the interface.
+-Implemented a small visualization of the project using djangotemplates
+-Caching the main page using redis
+-Tests with Unit Testing
+
+Stack:Django,PostgreSQL,Redis,Unit Testing,HTML,CSS
